@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
 
@@ -36,10 +37,10 @@ const promptUser = () => {
             message: 'List your collaborators:',
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'License',
             message: 'List the Readme license:',
-            choices: ["Choice A", MIT, "Choice B", ApacheLicense20, "Choice C", GPLv30, "Choice D", NoLicense,]
+            choices: ["Choice A", "MIT", "Choice B", "ApacheLicense20", "Choice C", "GPLv30", "Choice D", "NoLicense",]
         },
         {
             type: 'input',
@@ -66,7 +67,7 @@ const promptUser = () => {
 // TODO: Create a function to initialize app
 const init = () => {
     promptUser()
-        .then((answers) => writeFile('README.md', genrateMarkdown(answers)))
+        .then((answers) => writeFile('README.md', genrateMarkdown(data)))
         .then(() => console.log('Successfully wrote to README.md!'))
         .catch((err) => console.error(err));
 };
