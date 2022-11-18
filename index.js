@@ -39,6 +39,7 @@ const promptUser = () => {
             type: 'input',
             name: 'License',
             message: 'List the Readme license:',
+            choices: ["Choice A", MIT, "Choice B", ApacheLicense20, "Choice C", GPLv30, "Choice D", NoLicense,]
         },
         {
             type: 'input',
