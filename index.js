@@ -12,42 +12,47 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'description',
+            name: 'Description',
             message: 'Provide a short description of the who, what, when, where, and why of your project:',
         },
         {
             type: 'input',
-            name: 'tableOfContents',
+            name: 'TableOfContents',
             message: 'If your Readme is long, provide a table of contents:',
         },
         {
             type: 'input',
-            name: 'installation',
+            name: 'Installation',
             message: 'What steps are required to install your project?',
         },
         {
             type: 'input',
-            name: 'usage',
+            name: 'Usage',
             message: 'Provide instructions and example for use:',
         },
         {
             type: 'input',
-            name: 'credits',
+            name: 'Credits',
             message: 'List your collaborators:',
         },
         {
             type: 'input',
-            name: 'license',
+            name: 'License',
             message: 'List the Readme license:',
         },
         {
             type: 'input',
-            name: 'features',
+            name: 'Features',
             message: 'List your features:',
         },
         {
             type: 'input',
-            name: 'tests',
+            name: 'HowToContribute',
+            message: 'Would or How would you like other developers to contribute?',
+        },
+        {
+            type: 'input',
+            name: 'Tests',
             message: 'Any testing to further the devlopment of the application?',
         },
     ]);
@@ -55,7 +60,7 @@ const promptUser = () => {
 
 
 // TODO: Create a function to write README file
-const writeToFile(fileName, data) { }
+// const writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
 const init = () => {
