@@ -6,8 +6,8 @@ const fs = require('fs');
 const licenseArr = ["MIT", "ApacheLicense 2.0", "GPLv 3.0", "No License"];
 
 // TODO: Create an array of questions for user input
-const promptUser = () => {
-    return inquirer.prompt([
+inquirer
+    .prompt([
         {
             type: 'input',
             name: 'Title',
@@ -18,11 +18,11 @@ const promptUser = () => {
             name: 'Description',
             message: 'Provide a short description of the who, what, when, where, and why of your project:',
         },
-        {
-            type: 'input',
-            name: 'TableOfContents',
-            message: 'If your Readme is long, provide a table of contents:',
-        },
+        // {
+        //     type: 'input',
+        //     name: 'TableOfContents',
+        //     message: 'If your Readme is long, provide a table of contents:',
+        // },
         {
             type: 'input',
             name: 'Installation',
@@ -59,12 +59,12 @@ const promptUser = () => {
             name: 'Tests',
             message: 'Any testing to further the devlopment of the application?',
         },
-    ]);
-};
-
-
-// TODO: Create a function to write README file
-fs.writeFile("README.md", content, (error) => {
-    error ? console.log(error) : console.log("successfully written to readme.md!");
-});
+    ])
+    .then((answers) => {
+        const readmeContent = generateMarkdown(answers);
+        // TODO: Create a function to write README file
+        fs.writeFile('README.md', readmeContent, (err) =>
+            err ? console.log(err) : console.log('successfully written to readme.md!')
+        );
+    });
 

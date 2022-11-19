@@ -7,8 +7,8 @@ const icons = [
 ];
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const renderLicenseBadge = (License) => {
-  License != "No License"
+const renderLicenseBadge = (license) => {
+  license != "No License"
     ? `![${license}](https://img.shields.io/badge/License-${license}-blue)`
     : "";
   return `![${license}](https://img.shields.io/badge/License-${license}-blue)`;
@@ -32,7 +32,7 @@ const renderLicenseBadge = (License) => {
 // else " ";
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({
+const generateMarkdown = ({
   title,
   description,
   installation,
@@ -41,9 +41,9 @@ function generateMarkdown({
   license,
   features,
   contribute,
-  tests,
-}) {
-  const content = `# ${title}
+  tests }) =>
+
+  `#${title}
 
 ${renderLicenseBadge(license)}  
 
@@ -81,6 +81,5 @@ ${contribute}
 ## Tests
 ${tests}
 `;
-}
 
 module.exports = generateMarkdown; 
