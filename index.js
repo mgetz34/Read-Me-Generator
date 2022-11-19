@@ -40,7 +40,7 @@ inquirer
         },
         {
             type: 'list',
-            name: 'License',
+            name: 'license',
             message: 'List the Readme license:',
             choices: licenseArr,
         },

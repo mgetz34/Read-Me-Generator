@@ -8,10 +8,9 @@ const icons = [
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
-  license != "No License"
-    ? `![${license}](https://img.shields.io/badge/License-${license}-blue)`
-    : "";
-  return `![${license}](https://img.shields.io/badge/License-${license}-blue)`;
+  license = "MIT"
+    ? `icons.[0]`
+
 };
 
 //   // TODO: Create a function that returns the license link
