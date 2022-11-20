@@ -1,9 +1,59 @@
 // TODO: Include packages needed for this application
-const generateMarkdown = require('./utils/generateMarkdown');
+// const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
 const licenseArr = ["MIT", "ApacheLicense 2.0", "GPLv 3.0", "No License"];
+
+const generateMarkdown = ({
+    title,
+    description,
+    installation,
+    usage,
+    credits,
+    license,
+    features,
+    contribute,
+    tests
+}) =>
+    `
+# Title
+${title}
+
+#### Table of Contents:
+#### [Description](#description)
+#### [Installation](#installation)
+#### [Usage](#usage)
+#### [Credits](#credits)
+#### [License](#license)
+#### [Features](#features)
+#### [How to Contribute](#contribute) 
+#### [Tests](#tests)
+
+## Description
+${description}
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## Credits
+${credits}
+
+## License
+${license}
+
+## Features
+${features}
+
+## How to Contribute
+${contribute}
+
+## Tests
+${tests}
+`;
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -18,11 +68,11 @@ inquirer
             name: 'Description',
             message: 'Provide a short description of the who, what, when, where, and why of your project:',
         },
-        // {
-        //     type: 'input',
-        //     name: 'TableOfContents',
-        //     message: 'If your Readme is long, provide a table of contents:',
-        // },
+        {
+            type: 'input',
+            name: 'TableOfContents',
+            message: 'If your Readme is long, provide a table of contents:',
+        },
         {
             type: 'input',
             name: 'Installation',
@@ -62,6 +112,7 @@ inquirer
     ])
     .then((answers) => {
         const readmeContent = generateMarkdown(answers);
+        console.log(answers);
         // TODO: Create a function to write README file
         fs.writeFile('README.md', readmeContent, (err) =>
             err ? console.log(err) : console.log('successfully written to readme.md!')
