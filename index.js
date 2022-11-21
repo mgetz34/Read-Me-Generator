@@ -1,91 +1,40 @@
 // TODO: Include packages needed for this application
-// const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
-
 const licenseArr = ["MIT", "ApacheLicense 2.0", "GPLv 3.0", "No License"];
-
-const generateMarkdown = ({
-    title,
-    description,
-    installation,
-    usage,
-    credits,
-    license,
-    features,
-    contribute,
-    tests
-}) =>
-    `
-# Title
-${title}
-
-#### Table of Contents:
-#### [Description](#description)
-#### [Installation](#installation)
-#### [Usage](#usage)
-#### [Credits](#credits)
-#### [License](#license)
-#### [Features](#features)
-#### [How to Contribute](#contribute) 
-#### [Tests](#tests)
-
-## Description
-${description}
-
-## Installation
-${installation}
-
-## Usage
-${usage}
-
-## Credits
-${credits}
-
-## License
-${license}
-
-## Features
-${features}
-
-## How to Contribute
-${contribute}
-
-## Tests
-${tests}
-`;
 
 // TODO: Create an array of questions for user input
 inquirer
     .prompt([
         {
             type: 'input',
-            name: 'Title',
+            name: 'title',
             message: 'What is your Projects Title?',
         },
         {
             type: 'input',
-            name: 'Description',
+            name: 'description',
             message: 'Provide a short description of the who, what, when, where, and why of your project:',
         },
         {
             type: 'input',
-            name: 'TableOfContents',
+            name: 'Table of Contents',
             message: 'If your Readme is long, provide a table of contents:',
         },
         {
             type: 'input',
-            name: 'Installation',
+            name: 'installation',
             message: 'What steps are required to install your project?',
         },
         {
             type: 'input',
-            name: 'Usage',
+            name: 'usage',
             message: 'Provide instructions and example for use:',
         },
         {
             type: 'input',
-            name: 'Credits',
+            name: 'credits',
             message: 'List your collaborators:',
         },
         {
@@ -96,17 +45,17 @@ inquirer
         },
         {
             type: 'input',
-            name: 'Features',
+            name: 'features',
             message: 'List your features:',
         },
         {
             type: 'input',
-            name: 'HowToContribute',
+            name: 'contribute',
             message: 'Would or How would you like other developers to contribute?',
         },
         {
             type: 'input',
-            name: 'Tests',
+            name: 'tests',
             message: 'Any testing to further the devlopment of the application?',
         },
     ])
