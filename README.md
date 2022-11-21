@@ -1,5 +1,4 @@
-# Title
-    Read Me Generator
+# Read Me
 
 #### Table of Contents:
 #### [Description](#description)
@@ -12,25 +11,25 @@
 #### [Tests](#tests)
 
 ## Description
-Homework
+y
 
 ## Installation
-npm i, run, enter prompts
+y
 
 ## Usage
-na
+y
 
 ## Credits
-https://github.com/mgetz34
+y
 
 ## License
-No License
+MIT
 
 ## Features
-Command Line interactivity with node.js
+y
 
 ## How to Contribute
-na
+y
 
 ## Tests
-Definitely
+y

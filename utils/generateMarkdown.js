@@ -26,8 +26,7 @@ const generateMarkdown = ({
     tests
 }) =>
 
-    `# Title
-    ${title}
+    `# ${title}
 
 #### Table of Contents:
 #### [Description](#description)
