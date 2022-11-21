@@ -2,7 +2,23 @@
 const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
-const licenseArr = ["MIT", "ApacheLicense 2.0", "GPLv 3.0", "No License"];
+const licenseArr = [
+    {
+        name: "MIT",
+        value: "![License](https://img.shields.io/badge/license-MIT-green)",
+    },
+    {
+        name: "ApacheLicense 2.0",
+        value: "![License](https://img.shields.io/badge/license-Apache--2.0-green)",
+    },
+    {
+        name: "GPLv 3.0",
+        value: "![License](https://img.shields.io/badge/license-GPL-yellowgreen)",
+    },
+    {
+        name: "No License",
+        value: "![License](https://img.shields.io/github/license/mgetz34/Read-Me-Generator)"
+    }];
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -17,11 +33,11 @@ inquirer
             name: 'description',
             message: 'Provide a short description of the who, what, when, where, and why of your project:',
         },
-        {
-            type: 'input',
-            name: 'Table of Contents',
-            message: 'If your Readme is long, provide a table of contents:',
-        },
+        // {
+        //     type: 'input',
+        //     name: 'Table of Contents',
+        //     message: 'If your Readme is long, provide a table of contents:',
+        // },
         {
             type: 'input',
             name: 'installation',
