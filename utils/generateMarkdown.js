@@ -69,7 +69,7 @@ ${tests}
 
 ## Questions
 For any questions, please view my repo at ${"https://github.com/" + gitHub}
-and my email address is: ${[urlLink](email)}
+and my email address is: ${email}
 `;
 
 module.exports = generateMarkdown; 
