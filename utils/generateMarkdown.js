@@ -23,7 +23,9 @@ const generateMarkdown = ({
     license,
     features,
     contribute,
-    tests
+    tests,
+    gitHub,
+    email,
 }) =>
 
     `# ${title}
@@ -37,6 +39,9 @@ const generateMarkdown = ({
 #### [Features](#features)
 #### [How to Contribute](#contribute) 
 #### [Tests](#tests)
+#### [Questions]
+(#gitHub)
+(#email)
 
 ## Description
 ${description}
@@ -61,6 +66,10 @@ ${contribute}
 
 ## Tests
 ${tests}
+
+## Questions
+For any questions, please view my repo at ${gitHub}
+and my email address is: ${email}
 `;
 
 module.exports = generateMarkdown; 

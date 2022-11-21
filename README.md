@@ -1,4 +1,4 @@
-# Read Me
+# Read Me Generator
 
 #### Table of Contents:
 #### [Description](#description)
@@ -9,27 +9,34 @@
 #### [Features](#features)
 #### [How to Contribute](#contribute) 
 #### [Tests](#tests)
+#### [Questions]
+(#gitHub)
+(#email)
 
 ## Description
-y
+Homework
 
 ## Installation
-y
+npm i, run, answer prompts
 
 ## Usage
-y
+na
 
 ## Credits
-y
+na
 
 ## License
-MIT
+No License
 
 ## Features
-y
+na
 
 ## How to Contribute
-y
+na
 
 ## Tests
-y
+na
+
+## Questions
+For any questions, please view my repo at mgetz34
+and my email address is: mgetz340

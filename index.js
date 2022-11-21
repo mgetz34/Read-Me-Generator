@@ -58,6 +58,16 @@ inquirer
             name: 'tests',
             message: 'Any testing to further the devlopment of the application?',
         },
+        {
+            type: 'input',
+            name: 'gitHub',
+            message: 'Please enter your github user name:',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email for any users with questions about your application:',
+        },
     ])
     .then((answers) => {
         const readmeContent = generateMarkdown(answers);
