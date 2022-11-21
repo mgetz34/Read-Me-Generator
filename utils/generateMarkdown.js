@@ -40,8 +40,6 @@ const generateMarkdown = ({
 #### [How to Contribute](#contribute) 
 #### [Tests](#tests)
 #### [Questions]
-(#gitHub)
-(#email)
 
 ## Description
 ${description}
