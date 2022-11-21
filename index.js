@@ -29,15 +29,16 @@ inquirer
             message: 'What is your Projects Title?',
         },
         {
+            type: 'list',
+            name: 'license',
+            message: 'List the Readme license:',
+            choices: licenseArr,
+        },
+        {
             type: 'input',
             name: 'description',
             message: 'Provide a short description of the who, what, when, where, and why of your project:',
         },
-        // {
-        //     type: 'input',
-        //     name: 'Table of Contents',
-        //     message: 'If your Readme is long, provide a table of contents:',
-        // },
         {
             type: 'input',
             name: 'installation',
@@ -52,12 +53,6 @@ inquirer
             type: 'input',
             name: 'credits',
             message: 'List your collaborators:',
-        },
-        {
-            type: 'list',
-            name: 'license',
-            message: 'List the Readme license:',
-            choices: licenseArr,
         },
         {
             type: 'input',

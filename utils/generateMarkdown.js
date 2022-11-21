@@ -1,26 +1,10 @@
-//License badges URL
-// const icons = [
-
-//     ,
-//     ,
-//   ,
-// ];
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// const renderLicenseBadge = (license) => {
-//   license = 
-
-// };
-
-// ${renderLicenseBadge(license)}  
-// TODO: Create a function to generate markdown for README
 const generateMarkdown = ({
     title,
+    license,
     description,
     installation,
     usage,
     credits,
-    license,
     features,
     contribute,
     tests,
@@ -29,17 +13,21 @@ const generateMarkdown = ({
 }) =>
 
     `# ${title}
+    
+## License
+${license}
 
 #### Table of Contents:
+#### [License](#license)
 #### [Description](#description)
 #### [Installation](#installation)
 #### [Usage](#usage)
 #### [Credits](#credits)
-#### [License](#license)
 #### [Features](#features)
 #### [How to Contribute](#contribute) 
 #### [Tests](#tests)
 #### [Questions](#questions)
+
 
 ## Description
 ${description}
@@ -52,9 +40,6 @@ ${usage}
 
 ## Credits
 ${credits}
-
-## License
-${license}
 
 ## Features
 ${features}
