@@ -84,6 +84,8 @@ inquirer
         const readmeContent = generateMarkdown(answers);
         // console.log(answers);
         // TODO: Create a function to write README file
+        //README.md changed to SAMPLE.md for the purpose of video demo,
+        //changed back for future README generation
         fs.writeFile('README.md', readmeContent, (err) =>
             err ? console.log(err) : console.log('successfully written to readme.md!')
         );

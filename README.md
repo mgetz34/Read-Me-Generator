@@ -61,3 +61,5 @@ For any questions, please view my repo at: https://github.com/mgetz34
 My email address is: mgetz340@gmail.com
 
 ## Video Demo
+
+https://drive.google.com/file/d/1XrExaJmeK68qq_KvTEZlF5l5TxF2GGfo/view
