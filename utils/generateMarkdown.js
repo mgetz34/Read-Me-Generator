@@ -39,7 +39,7 @@ const generateMarkdown = ({
 #### [Features](#features)
 #### [How to Contribute](#contribute) 
 #### [Tests](#tests)
-#### [Questions]
+#### [Questions](#questions)
 
 ## Description
 ${description}

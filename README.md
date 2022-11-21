@@ -1,4 +1,4 @@
-# Read Me 
+# read me
 
 #### Table of Contents:
 #### [Description](#description)
@@ -9,13 +9,13 @@
 #### [Features](#features)
 #### [How to Contribute](#contribute) 
 #### [Tests](#tests)
-#### [Questions]
+#### [Questions](#questions)
 
 ## Description
-Homeworrk
+homework
 
 ## Installation
-npm i, run, answer prompts
+npm i, tun, answer prompts
 
 ## Usage
 na
@@ -33,7 +33,7 @@ na
 na
 
 ## Tests
-yes
+na
 
 ## Questions
 For any questions, please view my repo at https://github.com/mgetz34
