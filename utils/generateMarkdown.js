@@ -68,8 +68,8 @@ ${contribute}
 ${tests}
 
 ## Questions
-For any questions, please view my repo at ${gitHub}
-and my email address is: ${email}
+For any questions, please view my repo at ${"https://github.com/" + gitHub}
+and my email address is: ${[urlLink](email)}
 `;
 
 module.exports = generateMarkdown; 
