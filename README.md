@@ -1,53 +1,36 @@
 # Title
-
-Read me Generator
+    Read Me Generator
 
 #### Table of Contents:
-
 #### [Description](#description)
-
 #### [Installation](#installation)
-
 #### [Usage](#usage)
-
 #### [Credits](#credits)
-
 #### [License](#license)
-
 #### [Features](#features)
-
-#### [How to Contribute](#contribute)
-
+#### [How to Contribute](#contribute) 
 #### [Tests](#tests)
 
 ## Description
-
 Homework
 
 ## Installation
-
-npm i, run, enter answers
+npm i, run, enter prompts
 
 ## Usage
-
-any project ever
-
-## Credits
-
 na
 
-## License
+## Credits
+https://github.com/mgetz34
 
-MIT
+## License
+No License
 
 ## Features
-
-command line inteface stuff
+Command Line interactivity with node.js
 
 ## How to Contribute
-
-open to suggestions...
+na
 
 ## Tests
-
-absolutely
+Definitely
