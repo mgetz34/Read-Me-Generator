@@ -28,6 +28,8 @@ ${license}
 #### [Tests](#tests)
 #### [Questions](#questions)
 
+## License
+${"This Application is covered by a: " + license}
 
 ## Description
 ${description}
